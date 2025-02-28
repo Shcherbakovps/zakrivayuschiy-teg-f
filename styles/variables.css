@@ -5,8 +5,7 @@
     --main-font-size: 18px;
     --accent-font-size: 14px;
     --text-font-weight: 400;
-    --title-font-weight: 700; 
-
+    --title-font-weight: 700;
     --font-color: #000000;
     --bg-color: #FFFFFF;
     --border-color: #000000;
@@ -14,9 +13,7 @@
     --accent-color: #000000;
     --heartred-color: #FF0000;
     --button-text-color: #FFFFFF;
-
     --section-inline-size: clamp(min(100%, 375px), 50vw, 700px);
-
     --bg-image: repeating-linear-gradient(
                   to right,
                   #d3d3d3 0,
