@@ -11,7 +11,7 @@
 */
 
 .page {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, 'Inter-Variable'), sans-serif;
   color: var(--font-color, #000000);
   line-height: normal;
   font-variation-settings: 'wght' var(--text-font-weight, 400);
@@ -33,7 +33,7 @@
   padding-block-start: clamp(7.5rem, 6.923rem + 2.462vw, 8rem);
   padding-block-end: clamp(7.5rem, 6.923rem + 2.462vw, 8rem);
   margin-block-start: 100px;
-  margin-block-end: 85px;
+  margin-block-end: 100px;
 }
 
 .content__section {
@@ -58,15 +58,16 @@
 
 .cards__list-item {
   font-size: 18px;
-  margin-block-end: 50px;
+  margin-block-end: 52px;
 }
 
 .card__title {
   font-size: 18px;
   font-variation-settings: 'wght' var(--title-font-weight, 700);
   color: inherit;
+  line-height: 21.78px;
   padding-left: 10px;
-  padding-block: 4px;
+  padding-block: 3px;
   border: 2px solid var(--border-color, #000000);
   border-bottom: none;
 }
@@ -142,16 +143,17 @@
 }
 
 .card__article-container p:not(:last-of-type) {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
-.card__article-text, 
-.card__article-memories {
+.card__article-text {
   font-variation-settings: 'wght' var(--main-font, 400);
+  line-height: 21px;
+  gap: 27px;
 }
 
 .card__button-wrapper {
-  margin-top: 25px;
+  margin-top: 24px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -191,7 +193,7 @@
 .button__text {
   font-size: var(--accent-font-size, 14px);
   color: var(--button-text-color, #FFFFFF);
-  line-height: 21px;
+  line-height: 12.6px;
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
@@ -232,7 +234,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto 100px;
-  gap: 8px;
+  gap: 9px;
   inline-size: 335px;
   block-size: 51px;
 }
@@ -266,7 +268,6 @@
 
 .dialog__form {
   inline-size: 100%;
-  min-inline-size: 293px;
 }
 
 .dialog__button {
@@ -330,25 +331,25 @@
   }
 
   .card__article-container {
-    padding-top: 24px ;
+    padding-top: 24px;
   }
 
   .save-button {
     flex-direction: column;
     inline-size: 306px;
-    block-size: 86px;
+    block-size: 84px;
     gap: 8px;
   }
   
   .floppy-icon {
-    block-size: 29px;
-    inline-size: 29px;
-    padding-top: 3px;
+    block-size: 28px;
+    inline-size: 28px;
+    
   }
 
   .dialog__form {
-    inline-size: 257px;
-    padding-inline: 16px;
+    inline-size: 100%;
+
   }
   
   #modal {
