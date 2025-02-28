@@ -96,7 +96,15 @@
   text-shadow: -1px 0 var(--stroke-text-color, rgb(255 255 255 / 0.5)),
                0 1px var(--stroke-text-color, rgb(255 255 255 / 0.5)),
                1px 0 var(--stroke-text-color, rgb(255 255 255 / 0.5)),
-               0 -1px var(--stroke-text-color, rgb(255 255 255 / 0.5));   
+               0 -1px var(--stroke-text-color, rgb(255 255 255 / 0.5));
+}
+
+@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000;)) {
+  .card__image-label {
+    -webkit-text-stroke: 1px var(--stroke-text-color, rgb(255 255 255 /0.5));
+    text-stroke: 1px var(--stroke-text-color, rgb(255 255 255 / 0.5));
+    text-shadow: none;
+  }
 }
 
 .typewriter {
@@ -125,14 +133,6 @@
 
 .astronaut {
   filter: brightness(120%);
-}
-
-@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000;)) {
-  .card__image-label {
-    -webkit-text-stroke: 1px var(--stroke-text-color, rgb(255 255 255 /0.5));
-    text-stroke: 1px var(--stroke-text-color, rgb(255 255 255 / 0.5));
-    text-shadow: none;
-  }
 }
 
 .card__article-container {
