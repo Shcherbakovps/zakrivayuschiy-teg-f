@@ -265,12 +265,7 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.dialog__container {
-  inline-size: 353px;
-}
-
 .dialog__form {
-  
   inline-size: 293px;
 }
 
